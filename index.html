@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
+    <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-grid">
+            <a href="/" class="header-logo">
+                <img src="img/svg/toyboss-logo-white.svg" alt="">
+            </a>
+            <nav class="nav">
+                <a href="./about-us.html">О НАС</a>
+                <a href="">Производство</a>
+                <a href="">Продукция</a>
+                <a href="">СОТРУДНИЧЕСТВО</a>
+                <a href="./news.html">НОВОСТИ</a>
+                <a href="">КОНТАКТЫ</a>
+            </nav>
+            <div class="nav-right">
+                <div class="nav-right-set-lang">
+                    <div onclick="openDropdown('landDropdown')" class="dropbtn">ru</div>
+                    <div id="landDropdown" class="dropdown-content">
+                        <a href=""><img src="img/svg/kg.svg" alt="">KG</a>
+                        <a href="" class="active"><img src="img/svg/en.svg" alt="">EN</a>
+                        <a href=""><img src="img/svg/ru.svg" alt="">RU</a>
+                    </div>
+                </div>
+                <div class="mobile-burger" onclick="showMobileMenu()">
+                    <img src="img/svg/menu.svg" alt="">
+                </div>
+                <a href="" class="red-button button">Игра «Ustukan»</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-head">
+        <a href=""><img src="img/svg/toyboss-logo-blue.svg" alt=""></a>
+        <div onclick="hiddenMobileMenu()">
+            <img src="img/svg/close.svg" alt="">
+        </div>
+    </div>
+    <nav class="mobile-menu-head-nav">
+        <a href="./about-us.html">О НАС</a>
+        <a href="">Производство</a>
+        <a href="">Продукция</a>
+        <a href="">СОТРУДНИЧЕСТВО</a>
+        <a href="./news.html">НОВОСТИ</a>
+        <a href="">КОНТАКТЫ</a>
+    </nav>
+    <a href="" class="red-button button">Игра «Ustukan»</a>
+</div>
+<section class="main-block">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                 style="background-image: linear-gradient(180deg, #040F24 7.98%, rgba(0, 0, 0, 0) 100%), url(img/png/main.png)">
+                <div class="container">
+                    <div class="main-block-text" data-aos="fade-in">
+                        <h2 class="main-block-title">Производитель колбасных изделий халал №1 в Кыргызстане</h2>
+                        <p class="main-block-desc">Основан в 2012 году</p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                    <div class="swiper-button-wrapper" data-aos="fade-in">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"
+                 style="background-image: linear-gradient(180deg, #040F24 7.98%, rgba(0, 0, 0, 0) 100%), url(img/png/main.png)">
+                <div class="container">
+                    <div class="main-block-text" data-aos="fade-in">
+                        <h2 class="main-block-title">Производитель колбасных изделий халал №1 в Кыргызстане</h2>
+                        <p class="main-block-desc">Основан в 2012 году</p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                    <div class="swiper-button-wrapper" data-aos="fade-in">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us-block">
+    <div class="container" data-aos="fade-in">
+        <h3 class="section-title">О нас</h3>
+        <div class="about-us-block-grid">
+            <div class="about-us-block-grid-left">
+                <div id="tabs">
+                    <ul class="about-us-block-grid-tabs">
+                        <li>
+                            <a href="#about-us-tabs-1" class="about-us-block-grid-tabs-item">
+                                История
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-us-tabs-2" class="about-us-block-grid-tabs-item">
+                                МИССИЯ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-us-tabs-3" class="about-us-block-grid-tabs-item">
+                                ЦЕННОСТИ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="about-us-block-grid-tabs-content" id="about-us-tabs-1">
+                        <p>Торговая Марка «Тойбосс» была основана в 2012 году и за этот короткий срок смогла
+                            зарекомендовать
+                            себя на рынке Кыргызстана как производитель качественной, полезной, а самое главное вкусной
+                            мясной продукции. Наша компания предлагает</p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                    <div class="about-us-block-grid-tabs-content" id="about-us-tabs-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi autem eaque eius,
+                            incidunt mollitia nam quisquam recusandae repellendus?</p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                    <div class="about-us-block-grid-tabs-content" id="about-us-tabs-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ipsa.</p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="about-us-block-footer-quote-wrapper">
+                    <div class="about-us-block-footer-quote">
+                        <p>
+                            Мы хотим сделать компанию международной. Основное производство будет расположено здесь, но
+                            продукцию мы хотим вывести на экспортные рынки
+                        </p>
+                    </div>
+                    <div class="about-us-block-footer-quote-author">
+                        <div class="about-us-block-footer-quote-author-name">Мырзабек Орумбаев</div>
+                        <div class="about-us-block-footer-quote-author-status">Генеральный директор</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-block-grid-right">
+                <img src="img/png/about-us.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="advantages-block not-mode">
+    <div class="container" data-aos="fade-in">
+        <h3 class="section-title">Преимущества</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">Халал</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-1.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">FSSC 22000</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-2.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">Полная система прослеживаемости</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-3.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">Аккредитованная лаборатория</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-4.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">Сертифициорованный убойный цех</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-5.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="advantages-block-card">
+                        <div class="advantages-block-card-title">Своя птицефабрика «Агро Куш»</div>
+                        <div class="advantages-block-card-footer">
+                            <div class="advantages-block-card-image">
+                                <img src="img/svg/advantages-6.svg" alt="">
+                            </div>
+                            <div class="advantages-block-card-count">
+                                6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="group-of-companies-block"
+         style="background-image: linear-gradient(90deg, rgba(41,91,184,0.9), rgba(30,30,30,0.9)), url(https://picsum.photos/1920/1080)">
+    <div class="container" data-aos="fade-in">
+        <h3 class="section-title">Группа компаний</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="group-of-companies-block-card">
+                        <div class="group-of-companies-block-card-logo">
+                            <img src="img/svg/group-logo-1.svg" alt="">
+                        </div>
+                        <div class="group-of-companies-block-card-desc">
+                            <p>
+                                Ведущий бренд в Кыргызстане, предлагающий вкусные сэндвичи в розничных магазинах и
+                                крупных супермаркетах. Бренд был основан в 2009 году и с тех пор заслужил лидерство на
+                                рынке
+                            </p>
+                        </div>
+                        <img class="group-of-companies-block-card-decor" src="img/svg/group-1.svg" alt="">
+                        <a href="" class="group-of-companies-block-card-link red">sandwich.kg</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group-of-companies-block-card">
+                        <div class="group-of-companies-block-card-logo">
+                            <img src="img/svg/group-logo-2.svg" alt="">
+                        </div>
+                        <div class="group-of-companies-block-card-desc">
+                            <p>Сочетание традиционных рецептов, современных технологий и высоких
+                                стандартов производства составляют тот фундамент, на котором развивается наше
+                                предприятие</p>
+                        </div>
+                        <img class="group-of-companies-block-card-decor" src="img/svg/group-2.svg" alt="">
+                        <a href="" class="group-of-companies-block-card-link blue">kolbasa.kg</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group-of-companies-block-card">
+                        <div class="group-of-companies-block-card-logo">
+                            <img src="img/svg/group-logo-3.svg" alt="">
+                        </div>
+                        <div class="group-of-companies-block-card-desc">
+                            <p>Первая в Кыргызстане самая большая современная птицефабрика, которая
+                                специализируется на выращивании бройлеров</p>
+                        </div>
+                        <img class="group-of-companies-block-card-decor" src="img/svg/group-3.svg" alt="">
+                        <a href="" class="group-of-companies-block-card-link green">agrokush.kg</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group-of-companies-block-card">
+                        <div class="group-of-companies-block-card-logo">
+                            <img src="img/svg/group-logo-4.svg" alt="">
+                        </div>
+                        <div class="group-of-companies-block-card-desc">
+                            <p>Поддержание стабильного роста уровня качества,
+                                строгое соблюдение технологических рецептур и использование
+                                исключительно “Халал” продукции</p>
+                        </div>
+                        <img class="group-of-companies-block-card-decor" src="img/svg/group-4.svg" alt="">
+                        <a href="" class="group-of-companies-block-card-link orange">broiler.kg</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<section class="production-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title">Производство</h3>
+        <div class="production-block-text">
+            <p>В соответствии с техническим регламентом и международным стандартом пищевой безопасности в 2017 году был
+                запущен мясоперерабатывающий завод, соответствующий системе менеджмента FSSC 22000.</p>
+            <p>Данное подразделение проводит микробиологические, физико-химические и органолептические испытания
+                продукта и сырья, а также производит санитарные испытания производственного помещения и
+                оборудования.</p>
+        </div>
+    </div>
+    <div class="production-block-carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/png/production-banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/png/production-banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/png/production-banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/png/production-banner.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="production-block-text">
+            <p>Оборудование завода соответствует санитарно-техническим нормам. Персоналом в обязательном порядке
+                соблюдаются санитарно-гигиенические требования. </p>
+            <p>Для получения высококачественной продукции завод оснащён современным технологическим оборудованием от
+                ведущих мировых брендовю. Нами применяются самые последние разработки и инновационные технологии для
+                усовершенствования и улучшения процесса производства.</p>
+            <div class="section-show-more">
+                <a href="" class="button red-button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+        class="statistics-block"
+        data-aos="fade-in"
+        style="background-image: linear-gradient(90deg, rgba(41,91,184,0.9), rgba(30,30,30,0.9)), url(img/png/stats.png)"
+>
+    <div class="container">
+        <h3 class="section-title">Статистика</h3>
+        <div class="statistics-block-grid">
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">ЛИДЕРЫ</div>
+                <div class="statistics-block-grid-item-count">
+                    №
+                    <span class="counter">1</span>
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    производитель колбасных изделий в Кыргызстане
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">УВЕРЕННОСТЬ</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">15</span>
+                    лет
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    вашего доверия. Идем только вперед
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">Группа компаний</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">4</span>
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    ведущие компании в
+                    агро-пищевой индустрии
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">КОМАНДА</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">1200</span>
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    профессионалов в группе компаний
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">ЛЕГКИЙ ДОСТУП</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">100</span>
+                    %
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    покрытия. Мы во всех регионах страны
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">АССОРТИМЕНТ</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">32</span>
+                    видов
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    колбасных изделий и деликатесов. Это число непрерывно растет
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">Экономика</div>
+                <div class="statistics-block-grid-item-count">
+                    Топ-
+                    <span class="counter">10</span>
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    крупнейших налогоплательщиков страны
+                </p>
+            </div>
+            <div class="statistics-block-grid-item">
+                <div class="statistics-block-grid-item-title">мощность</div>
+                <div class="statistics-block-grid-item-count">
+                    <span class="counter">40</span>
+                    тонн
+                </div>
+                <p class="statistics-block-grid-item-desc">
+                    в сутки производится ваших любимых продуктов
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title">Продукция</h3>
+        <div id="tabs-production">
+            <ul class="product-block-nav">
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-1">Полукопченые колбасы</a>
+                </li>
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-2">Вареные колбасы</a>
+                </li>
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-3">Сосиски</a>
+                </li>
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-4">КУРИНОЕ МЯСО</a>
+                </li>
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-5">Сэндвичи</a>
+                </li>
+                <li>
+                    <a class="product-block-nav-item" href="#product-tab-6">Все</a>
+                </li>
+            </ul>
+            <div id="product-tab-1">
+                <div class="product-block-sub-nav">
+                    <div class="product-block-sub-nav-item active">
+                        Пепперони
+                    </div>
+                </div>
+                <div class="product-block-content">
+                    <div class="product-block-content-left">
+                        <ul class="product-block-content-tabs">
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-1-1">Описание</a>
+                            </li>
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-1-2">Состав</a>
+                            </li>
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-1-3">Специи</a>
+                            </li>
+                        </ul>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-1">
+                            <p class="product-block-content-tabs-content-desc">Пепперони отлично подходит для
+                                приготовления
+                                пиццы. Изысканный, терпкий вкус пицце придает
+                                основной ингредиент – колбаса пепперони. Пепперони отлично подходит для приготовления
+                                пиццы.
+                                Изысканный, терпкий вкус пицце придает основной ингредиент – колбаса пепперони.
+                                Пепперони
+                                отлично подходит для приготовления пиццы. Изысканный, терпкий вкус пицце придает
+                                основной
+                                ингредиент – колбаса пепперони.
+                            </p>
+                        </div>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-2">
+                            <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Doloribus, tempora!</p>
+                        </div>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-3">
+                            <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Consequuntur dicta dolore incidunt ipsa neque, quibusdam similique ut.
+                                Ab ipsa, nobis!</p>
+                        </div>
+                        <div class="product-block-content-certificates">
+                            <div class="product-block-content-certificates-item">
+                                <img src="img/svg/certificate-halal-1.svg" alt="">
+                            </div>
+                            <div class="product-block-content-certificates-item">
+                                <img src="img/svg/certificate-halal-2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block-content-center">
+                        <img src="img/png/man-product-decor.png" alt="">
+                    </div>
+                    <div class="product-block-content-center-right">
+                        <div class="product-block-content-center-right-status">
+                            ХИТ ПРОДАЖ
+                        </div>
+                        <div class="product-block-content-center-right-img">
+                            <img src="img/png/man-product.png" alt="">
+                        </div>
+                        <h3 class="product-block-content-center-right-title">Фирменная</h3>
+                        <p class="product-block-content-center-right-desc">
+                            Фирменный продукт, выпускаемый по эксклюзивной
+                            рецептуре отлично подходит для ...
+                        </p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div id="product-tab-2">
+                <div class="product-block-sub-nav">
+                    <div class="product-block-sub-nav-item active">
+                        Пепперони
+                    </div>
+                </div>
+                <div class="product-block-content">
+                    <div class="product-block-content-left">
+                        <ul class="product-block-content-tabs">
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-2-1">Описание</a>
+                            </li>
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-2-2">Состав</a>
+                            </li>
+                            <li class="product-block-content-tabs-item">
+                                <a href="#product-tab-2-3">Специи</a>
+                            </li>
+                        </ul>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-2-1">
+                            <p class="product-block-content-tabs-content-desc">Пепперони отлично подходит для
+                                приготовления
+                                пиццы. Изысканный, терпкий вкус пицце придает
+                                основной ингредиент – колбаса пепперони. Пепперони отлично подходит для приготовления
+                                пиццы.
+                                Изысканный, терпкий вкус пицце придает основной ингредиент – колбаса пепперони.
+                                Пепперони
+                                отлично подходит для приготовления пиццы. Изысканный, терпкий вкус пицце придает
+                                основной
+                                ингредиент – колбаса пепперони.
+                            </p>
+                        </div>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-2-2">
+                            <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Doloribus, tempora!</p>
+                        </div>
+                        <div class="product-block-content-tabs-content-wrapper" id="product-tab-2-3">
+                            <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Consequuntur dicta dolore incidunt ipsa neque, quibusdam similique ut.
+                                Ab ipsa, nobis!</p>
+                        </div>
+
+                        <div class="product-block-content-certificates">
+                            <div class="product-block-content-certificates-item">
+                                <img src="img/svg/certificate-halal-1.svg" alt="">
+                            </div>
+                            <div class="product-block-content-certificates-item">
+                                <img src="img/svg/certificate-halal-2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block-content-center">
+                        <img src="img/png/man-product-decor.png" alt="">
+                    </div>
+                    <div class="product-block-content-center-right">
+                        <div class="product-block-content-center-right-status">
+                            ХИТ ПРОДАЖ
+                        </div>
+                        <div class="product-block-content-center-right-img">
+                            <img src="img/png/man-product.png" alt="">
+                        </div>
+                        <h3 class="product-block-content-center-right-title">Фирменная</h3>
+                        <p class="product-block-content-center-right-desc">
+                            Фирменный продукт, выпускаемый по эксклюзивной
+                            рецептуре отлично подходит для ...
+                        </p>
+                        <a href="" class="button red-button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div id="product-tab-3"></div>
+            <div id="product-tab-4"></div>
+            <div id="product-tab-5"></div>
+            <div id="product-tab-6"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="news-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title news-block-title">Новости</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="news-block-card">
+                        <a href="" class="news-block-card-link"></a>
+                        <picture class="news-block-card-picture">
+                            <img class="news-block-card-img" src="https://picsum.photos/350/300" alt="">
+                        </picture>
+                        <h6 class="news-block-card-date">17 июля 2020</h6>
+                        <h2 class="news-block-card-title">
+                            Первая в Кыргызской Республике птицефабрика бройлерного направления в Иссык-Кульской
+                            области
+                        </h2>
+                        <p class="news-block-card-desc">
+                            Российско-Кыргызский Фонд Развития одобрил финансирование проекта по строительству первой в
+                            Кыргызской Республике птицефабрики
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-block-card">
+                        <a href="" class="news-block-card-link"></a>
+                        <picture class="news-block-card-picture">
+                            <img class="news-block-card-img" src="https://picsum.photos/350/300" alt="">
+                        </picture>
+                        <h6 class="news-block-card-date">17 июля 2020</h6>
+                        <h2 class="news-block-card-title">
+                            Первая в Кыргызской Республике птицефабрика бройлерного направления в Иссык-Кульской
+                            области
+                        </h2>
+                        <p class="news-block-card-desc">
+                            Российско-Кыргызский Фонд Развития одобрил финансирование проекта по строительству первой в
+                            Кыргызской Республике птицефабрики
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-block-card">
+                        <a href="" class="news-block-card-link"></a>
+                        <picture class="news-block-card-picture">
+                            <img class="news-block-card-img" src="https://picsum.photos/350/300" alt="">
+                        </picture>
+                        <h6 class="news-block-card-date">17 июля 2020</h6>
+                        <h2 class="news-block-card-title">
+                            Первая в Кыргызской Республике птицефабрика бройлерного направления в Иссык-Кульской
+                            области
+                        </h2>
+                        <p class="news-block-card-desc">
+                            Российско-Кыргызский Фонд Развития одобрил финансирование проекта по строительству первой в
+                            Кыргызской Республике птицефабрики
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="news-block-card">
+                        <a href="" class="news-block-card-link"></a>
+                        <picture class="news-block-card-picture">
+                            <img class="news-block-card-img" src="https://picsum.photos/350/300" alt="">
+                        </picture>
+                        <h6 class="news-block-card-date">17 июля 2020</h6>
+                        <h2 class="news-block-card-title">
+                            Первая в Кыргызской Республике птицефабрика бройлерного направления в Иссык-Кульской
+                            области
+                        </h2>
+                        <p class="news-block-card-desc">
+                            Российско-Кыргызский Фонд Развития одобрил финансирование проекта по строительству первой в
+                            Кыргызской Республике птицефабрики
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="section-show-more">
+            <a href="" class="button red-button">Все новости</a>
+        </div>
+    </div>
+</section>
+
+<section class="certificate-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title">Сертификаты</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper" id="lightgallery">
+                <div
+                        class="swiper-slide"
+                        data-src="img/png/sertificate-2.png"
+                        data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                >
+                    <picture class="certificate-block-card-picture">
+                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
+                    <picture class="certificate-block-card-picture">
+                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
+                    <picture class="certificate-block-card-picture">
+                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide" data-src="img/png/sertificate.png">
+                    <div class="certificate-block-card">
+                        <picture class="certificate-block-card-picture">
+                            <img class="certificate-block-card-img" src="img/png/sertificate.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-src="img/png/sertificate.png">
+                    <picture class="certificate-block-card-picture">
+                        <img class="certificate-block-card-img" src="img/png/sertificate.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
+                    <picture class="certificate-block-card-picture">
+                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
+                    </picture>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="section-show-more">
+        <a href="" class="button red-button">Все сертификаты</a>
+    </div>
+</section>
+
+<section
+        class="cooperation-block"
+        data-aos="fade-in"
+        style="background-image: linear-gradient(90deg, rgba(41,91,184,0.9), rgba(30,30,30,0.9)), url(https://picsum.photos/1920/465)"
+>
+    <div class="container">
+        <div class="cooperation-block-grid">
+            <div class="cooperation-block-grid-left">
+                <h4 class="cooperation-block-grid-left-title">Сотрудничество</h4>
+                <p class="cooperation-block-grid-left-desc">По всем возникающим вопросам вы можете проконсультироваться
+                    с нашими специалистами по телефонам:</p>
+            </div>
+            <div class="cooperation-block-grid-right">
+                <img class="cooperation-block-grid-right-img" src="./img/svg/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cooperation-block-line"></div>
+    <div class="container">
+        <div class="cooperation-block-contacts">
+            <a class="cooperation-block-contacts-link" href="tel: +996 772 08 00 30">г. Бишкек:
+                <span>+996 772 08 00 30</span></a>
+            <a class="cooperation-block-contacts-link" href="tel: +996 772 08 00 30">г. Ош:
+                <span>+996 772 08 00 30</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title">Часто задаваемые вопросы</h3>
+        <div class="faq-block-container">
+            <div class="faq-block-accordions" id="faq">
+                <div class="faq-block-accordion-item">
+                    <button class="faq-block-accordion">Сертифицирована ли продукция?</button>
+                </div>
+                <div class="faq-block-accordion-panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="faq-block-accordion-item">
+                    <button class="faq-block-accordion">Сертифицирована ли продукция?</button>
+                </div>
+                <div class="faq-block-accordion-panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="question-block" data-aos="fade-in">
+    <div class="container">
+        <h3 class="section-title">Опрос</h3>
+        <p class="question-block-desc">Ответьте, пожалуйста, на несколько вопросов</p>
+        <div class="question-block-content">
+            <h5 class="question-block-content-title">Как вы узнали о нашей компании?</h5>
+            <h6 class="question-block-content-subtitle">Выберите ответ:</h6>
+            <div class="question-block-content-grid">
+                <div class="question-block-content-grid-item active">От друзей</div>
+                <div class="question-block-content-grid-item">От родственников</div>
+                <div class="question-block-content-grid-item">В социальных сетях</div>
+                <div class="question-block-content-grid-item">Наружная реклама</div>
+            </div>
+            <div class="question-block-content-counter">
+                <div class="question-block-content-counter-button prev"></div>
+                <div class="question-block-content-counter-count">
+                    <span>1</span> - 8
+                </div>
+                <div class="question-block-content-counter-button next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-grid-left">
+                <a href="" class="footer-grid-left-logo"><img src="img/svg/toyboss-logo-white.svg" alt=""></a>
+                <p class="footer-slogan">Компания «Тойбосс» -производитель
+                    колбасных изделий</p>
+                <div class="footer-social">
+                    <a href="">
+                        <img src="img/svg/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/svg/tiktok.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/svg/facebook-2.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/svg/youtube.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-whatsapp">
+                    <div class="footer-whatsapp-label">WhatsApp:</div>
+                    <a class="footer-whatsapp-link" href="tel: +996 312 45 37 66"><img src="img/svg/whatsapp.svg"
+                                                                                       alt="">+996 312 45 37 66</a>
+                </div>
+            </div>
+            <div class="footer-grid-right">
+                <div>
+                    <div class="footer-right-title">контакты</div>
+                    <div class="footer-right-info">
+                        <div class="footer-right-info-label">Офис в г. Бишкек</div>
+                        <div class="footer-right-info-title">Ул. Чокана Валиханова 2/3Б</div>
+                    </div>
+                    <div class="footer-right-info">
+                        <div class="footer-right-info-label">Телефон:</div>
+                        <div class="footer-right-info-title">+996 312 45 37 66</div>
+                    </div>
+                    <div class="footer-right-info">
+                        <div class="footer-right-info-label">E-mail:</div>
+                        <div class="footer-right-info-title">info@toyboss.kg</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-right-title">Меню</div>
+                    <nav class="footer-right-nav">
+                        <a href="">О НАС</a>
+                        <a href="">Производство</a>
+                        <a href="">Продукция</a>
+                        <a href="">СОТРУДНИЧЕСТВО</a>
+                        <a href="">НОВОСТИ</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-copyright">
+    Все права защищены. ОсОО Адал Азык 2024
+</div>
+
+<script src="libs/jquery/jquery-v2.2.4.min.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/jquery/jquery.counterup.min.js"></script>
+<script src="libs/jquery/jquery-ui.js"></script>
+<script src="libs/lightgallery/lightgallery.js"></script>
+<script src="libs/jquery/jquery.custom-scroll.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/global.js"></script>
+</body>
+</html>
