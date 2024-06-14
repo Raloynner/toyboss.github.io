@@ -285,7 +285,17 @@ const swiper = [
       delay: 3000,
     },
     speed: 1200,
-    spaceBetween: 10,
+    spaceBetween: 30,
+    breakpoints: {
+      // mobile + tablet - 320-990
+      0: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+
+    },
     pagination: {
       el: '.products-info-row .swiper-pagination',
     },

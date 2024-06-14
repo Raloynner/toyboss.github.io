@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/aos/aos.css">
+  <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
+  <link rel="stylesheet" href="css/global.css">
+
+  <title>Document</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header-grid">
+      <a href="/" class="header-logo">
+        <img src="img/svg/toyboss-logo-white.svg" alt="">
+      </a>
+      <nav class="nav">
+        <a href="./about-us.html">О НАС</a>
+        <a href="./production.html">Производство</a>
+        <a href="./catalog.html">Продукция</a>
+        <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+        <a href="./news.html">НОВОСТИ</a>
+        <a href="./contacts.html">КОНТАКТЫ</a>
+      </nav>
+      <div class="nav-right">
+        <div class="nav-right-set-lang">
+          <div onclick="openDropdown('landDropdown')" class="dropbtn">ru</div>
+          <div id="landDropdown" class="dropdown-content">
+            <a href=""><img src="img/svg/kg.svg" alt="">KG</a>
+            <a href="" class="active"><img src="img/svg/en.svg" alt="">EN</a>
+            <a href=""><img src="img/svg/ru.svg" alt="">RU</a>
+          </div>
+        </div>
+        <div class="mobile-burger" onclick="showMobileMenu()">
+          <img src="img/svg/menu.svg" alt="">
+        </div>
+        <a href="" class="red-button button">Игра «Ustukan»</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+  <div class="mobile-menu-head">
+    <a href=""><img src="img/svg/toyboss-logo-blue.svg" alt=""></a>
+    <div onclick="hiddenMobileMenu()">
+      <img src="img/svg/close.svg" alt="">
+    </div>
+  </div>
+  <nav class="mobile-menu-head-nav">
+    <a href="./about-us.html">О НАС</a>
+    <a href="./production.html">Производство</a>
+    <a href="./catalog.html">Продукция</a>
+    <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+    <a href="./news.html">НОВОСТИ</a>
+    <a href="./contacts.html">КОНТАКТЫ</a>
+  </nav>
+  <a href="" class="red-button button">Игра «Ustukan»</a>
+</div>
+
+<section class="cooperation-page">
+  <div class="container">
+    <h1 class="section-title">Сотрудничество</h1>
+    <picture class="image">
+      <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/png/cooperation.webp 1x, img/png/cooperation.webp 2x">
+      <source type="image/jpeg" media="(min-width: 1200px)"
+              srcset="img/png/cooperation.png 1x, img/png/cooperation.png 2x">
+      <img class="photo-card__img" src="img/png/products-5.png"
+           srcset="img/png/cooperation.png 2x" width="1500" height="460" alt="">
+    </picture>
+    <div class="cooperation-page-grid">
+      <div>
+        <p>
+          В 2017 году торговая марка “Тойбосс” успешно прошла аудит и признана предприятием, функционирующим в
+          соответствии с законодательством Кыргызской Республики и техническими регламентами Таможенного Союза, с
+          соблюдением системы менеджмента безопасности пищевых продуктов и принципов системы ХАССП
+        </p>
+      </div>
+      <div>
+        <p>
+          Сертифицирована международной организацией TÜV Thüringen e.V. требованиям ISO 22000:2005, ISO/TS 22002-1:2009
+          и FSSC 22000. Также производство ведется по принципам халал и сертифицировано ДУМК КР и Государственный
+          стандарт КР
+        </p>
+      </div>
+    </div>
+    <div class="cooperation-page-info">
+      <div class="cooperation-page-info-card">
+        <div class="cooperation-page-info-card-wrapper">
+        <h5 class="title red">Оптовые продажи</h5>
+        <p class="desc">По всем возникающим вопросам вы можете проконсультироваться с нашими специалистами по телефонам:</p>
+        </div>
+        <div class="cooperation-page-info-contact red">
+          <a href="tel: +996 772 08 00 30">г. Бишкек: +996 772 08 00 30</a>
+          <a href="tel: +996 772 54 04 03">г. Ош: +996 772 54 04 03</a>
+        </div>
+      </div>
+      <div class="cooperation-page-info-card">
+        <div class="cooperation-page-info-card-wrapper">
+        <h5 class="title blue">Розничные продажи</h5>
+        <p class="desc">По всем возникающим вопросам вы можете проконсультироваться с нашими специалистами по телефонам:</p>
+        </div>
+        <div class="cooperation-page-info-contact blue">
+          <a href="tel: +996 772 08 00 30">г. Бишкек: +996 772 08 00 30</a>
+          <a href="tel: +996 772 54 04 03">г. Ош: +996 772 54 04 03</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <h2 class="section-title">Партнеры</h2>
+    <p class="desc">Наши партнеры являются передовыми компаниями в сегменте упаковочных материалов и оборудования</p>
+    <div class="grid">
+      <div class="item">
+        <img src="img/png/partners-1.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-2.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-3.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-4.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-5.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-6.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-7.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-8.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-9.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-10.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-11.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-12.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-13.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-14.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-15.png" alt="">
+      </div>
+      <div class="item">
+        <img src="img/png/partners-16.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="form-block">
+  <div class="container">
+    <h4 class="section-title">РАБОТА В ТОЙБОСС</h4>
+    <p class="desc">Хотите расти вместе с нами? Присоединяйтесь к нашей команде, заполните форму ниже</p>
+    <form action="" class="form">
+      <div class="form-grid">
+        <label class="label">
+          <input type="text" placeholder="Ваше имя:">
+        </label>
+        <label class="label">
+          <input type="text" placeholder="Ваш номер:">
+        </label>
+      </div>
+      <label class="label">
+        <input type="text" placeholder="Желаемая позиция">
+      </label>
+      <label class="label">
+        <textarea placeholder="Ваше сообщение" rows="3"></textarea>
+      </label>
+      <label class="label-checkbox">
+        <input type="checkbox">
+        <p>Я принимаю условия <span>Пользовательского соглашения</span>, ознакомлен с <span>политикой конфиденциальности</span>, даю <span>Согласие на обработку персональных данных</span>.</p>
+      </label>
+      <div class="form-flex">
+        <label class="label-file"><input type="file"> Прикрепить файл </label>
+        <button class="button red-button">Отправить</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-grid-left">
+        <a href="" class="footer-grid-left-logo"><img src="img/svg/toyboss-logo-white.svg" alt=""></a>
+        <p class="footer-slogan">Компания «Тойбосс» -производитель
+          колбасных изделий</p>
+        <div class="footer-social">
+          <a href="">
+            <img src="img/svg/facebook.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/svg/tiktok.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/svg/facebook-2.svg" alt="">
+          </a>
+          <a href="">
+            <img src="img/svg/youtube.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-whatsapp">
+          <div class="footer-whatsapp-label">WhatsApp:</div>
+          <a class="footer-whatsapp-link" href="tel: +996 312 45 37 66"><img src="img/svg/whatsapp.svg"
+                                                                             alt="">+996 312 45 37 66</a>
+        </div>
+      </div>
+      <div class="footer-grid-right">
+        <div>
+          <div class="footer-right-title">контакты</div>
+          <div class="footer-right-info">
+            <div class="footer-right-info-label">Офис в г. Бишкек</div>
+            <div class="footer-right-info-title">Ул. Чокана Валиханова 2/3Б</div>
+          </div>
+          <div class="footer-right-info">
+            <div class="footer-right-info-label">Телефон:</div>
+            <div class="footer-right-info-title">+996 312 45 37 66</div>
+          </div>
+          <div class="footer-right-info">
+            <div class="footer-right-info-label">E-mail:</div>
+            <div class="footer-right-info-title">info@toyboss.kg</div>
+          </div>
+        </div>
+        <div>
+          <div class="footer-right-title">Меню</div>
+          <nav class="footer-right-nav">
+            <a href="">О НАС</a>
+            <a href="./production.html">Производство</a>
+            <a href="./catalog.html">Продукция</a>
+            <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+            <a href="">НОВОСТИ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-copyright">
+  Все права защищены. ОсОО Адал Азык 2024
+</div>
+
+<script src="libs/jquery/jquery-v2.2.4.min.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/jquery/jquery.counterup.min.js"></script>
+<script src="libs/jquery/jquery-ui.js"></script>
+<script src="libs/lightgallery/lightgallery.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/global.js"></script>
+</body>
+</html>
