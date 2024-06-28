@@ -1,4 +1,5 @@
 @import "var";
+
 //main-block
 .main-block {
   margin-top: -104px;
@@ -8,16 +9,34 @@
 
   .container {
     position: relative;
+    z-index: 2;
   }
 
   .swiper-slide {
-    min-height: 100vh;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 204px 0 104px 0;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 204px 0 104px 0;
+    &:before{
+      position: absolute;
+      content: '';
+      background: linear-gradient(180deg, #040F24 7.98%, rgba(0, 0, 0, 0) 100%);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .wrapper-image{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
     @media (max-width: 640px) {
       min-height: inherit;
     }
@@ -25,7 +44,72 @@
       flex-wrap: wrap;
     }
   }
+  .swiper-slide-active {
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
 
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fade-in-buttons {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+    @keyframes fade-in-buttons-mobile {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+
+      }
+    }
+
+    .swiper-button-wrapper{
+      animation-name: fade-in-buttons;
+
+      animation-fill-mode: both;
+      @media (max-width: 640px) {
+        animation-name: fade-in-buttons-mobile;
+      }
+    }
+    .main-block-title, .main-block-desc, .button, {
+      animation-name: fade-in;
+
+      animation-fill-mode: both;
+    }
+    .main-block-title{
+      animation-duration: 1.2s;
+      animation-delay: 0.6s;
+    }
+    .main-block-desc{
+      animation-duration: 1.2s;
+      animation-delay: 0.7s;
+    }
+    .button{
+      animation-duration: 1.2s;
+      animation-delay: 0.8s;
+    }
+    .swiper-button-wrapper{
+      animation-duration: 1.2s;
+      animation-delay: 0.9s;
+    }
+  }
   .main-block-text {
     max-width: 890px;
     padding-right: 60px;
@@ -101,15 +185,33 @@
 //about-us-block
 .about-us-block {
   background-color: #F7F8FB;
+  overflow: hidden;
 
   .container {
     padding: 110px 16px;
-    background-image: url(../img/svg/arnament-top.svg), url(../img/svg/arnament-bottom.svg);
-    background-position: right 100px top, right 100px bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 232px;
-    @media (max-width: 960px) {
-      background-position: center top, center bottom;
+    position: relative;
+
+  }
+  .decor{
+    position: absolute;
+    right: 100px;
+    width: 232px;
+    height: 232px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+    &.decor-top{
+      top: 0;
+      background-image: url(../img/svg/arnament-top.svg);
+      background-position: top;
+    }
+    &.decor-bottom{
+      bottom: 0;
+      background-image: url(../img/svg/arnament-bottom.svg);
+      background-position: bottom;
     }
   }
 
@@ -130,10 +232,38 @@
   }
 
   .about-us-block-grid-right {
+    position: relative;
+    z-index: 2;
     @media (max-width: 960px) {
       display: flex;
       justify-content: center;
     }
+    .image-1{
+      position: absolute;
+      top: 40px !important;
+      left: 0;
+      z-index: 2;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      @media (max-width: 960px) {
+        top: -40px !important;
+        left: calc(50% - 100px) !important;
+        position: absolute !important;
+      }
+    }
+    .image-2{
+      left: inherit !important;
+      right: 0;
+      max-width: 400px;
+      width: 100%;
+      z-index: 1;
+      object-fit: contain;
+      @media (max-width: 960px) {
+        position: static !important;
+      }
+    }
+
   }
 
   .about-us-block-grid-tabs {
@@ -233,7 +363,18 @@
     @media (max-width: 1200px) {
       max-width: 100%;
     }
-
+    &.desktop{
+      display: none;
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
+    &.mobile{
+      display: none;
+      @media (max-width: 1200px) {
+        display: block;
+      }
+    }
 
   }
 
@@ -249,6 +390,11 @@
     background-image: url(../img/svg/quote.svg);
     padding-left: 90px;
     margin-bottom: 50px;
+    @media (max-width: 640px) {
+      padding-left: 0;
+      background-position: left -10px top;
+      padding-top: 60px;
+    }
   }
 
   .about-us-block-footer-quote-author {
@@ -366,6 +512,13 @@
 
     &:hover {
       box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.1);
+      background-color: #BA2828;
+      .advantages-block-card-title{
+        color: #ffffff;
+      }
+      .advantages-block-card-image{
+        filter: brightness(0) invert(1);
+      }
     }
 
     .advantages-block-card-decor {
@@ -524,54 +677,79 @@
 //production-block
 .production-block {
   padding: 110px 0;
-
-  .production-block-text {
-    background-image: url(../img/svg/arnament-left.svg), url(../img/svg/arnament-right.svg);
-    background-position: left center, right center;
+  position: relative;
+  overflow: hidden;
+  .decor{
+    width: 280px;
+    height: 280px;
+    z-index: 1;
     background-repeat: no-repeat, no-repeat;
-    background-size: 283px;
+    background-size: contain;
+    position: absolute;
+    top: 40px;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+    &.decor-left{
+      background-image: url(../img/svg/arnament-left.svg);
+      background-position: left center;
+      left: 0;
+    }
+    &.decor-right{
+      background-image: url(../img/svg/arnament-right.svg);
+      background-position: right center;
+      right: 0;
+    }
+    &.decor-bottom-left{
+      background-image: url(../img/svg/arnament-left.svg);
+      background-position: left center;
+      left: 0;
+      top: inherit !important;
+      bottom: 0;
+    }
+    &.decor-bottom-right{
+      background-image: url(../img/svg/arnament-right.svg);
+      background-position: right center;
+      right: 0;
+      top: inherit !important;
+      bottom: 0;
+    }
+
+
+  }
+  .production-block-text {
     padding: 0 382px;
-    min-height: 370px;
+    min-height: 225px;
     @media (max-width: 1532px) {
-      padding: 0 260px;
-      background-size: 230px;
+      padding: 0 250px;
     }
     @media (max-width: 1200px) {
       padding: 0 190px;
-      background-size: 180px;
     }
-    @media (max-width: 960px) {
+    @media (max-width: 1000px) {
       padding: 0;
-      background-image: none
     }
 
     p {
       font-weight: 400;
-      font-size: 26px;
-      line-height: 38px;
-      margin-bottom: 30px;
-      @media (max-width: 1532px) {
-        font-size: 22px;
-        line-height: 32px;
-      }
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 24px;
     }
   }
 
   .production-block-carousel {
     margin: 40px 0;
-
+    position: relative;
+    z-index: 2;
   }
 
   .swiper-slide {
-    opacity: 0.2;
-    transition: 0.3s;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
-    @media (max-width: 1532px) {
-      height: 400px;
-    }
     @media (max-width: 640px) {
       height: 280px;
     }
@@ -580,11 +758,15 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      opacity: 0.2;
+      transition: 0.3s;
     }
   }
 
   .swiper-slide-active {
-    opacity: 1;
+   img{
+     opacity: 1;
+   }
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -672,7 +854,7 @@
 }
 
 //product-block
-.product-block {
+.product-block, .modal {
   padding: 110px 0;
   background-color: #fff;
 
@@ -712,6 +894,16 @@
       background-color: #F7F8FB;
       border-radius: 10px;
       padding: 42px 25px;
+      position: relative;
+      .link-modal{
+        position: absolute;
+        font-size: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
     }
     .catalogs-grid-item-image{
       margin: -90px 0 10px -25px;
@@ -984,6 +1176,15 @@
     position: relative;
     flex: 0 0 374px;
     border-radius: 0px 10px 10px 0px;
+    &.mode{
+      border-radius: 0px 10px 10px 0px;
+      background-color: #BA2828;
+      @media (max-width: 1200px) {
+        flex: 0 0 100%;
+        margin: 0 auto;
+        border-radius: 0 0 10px 10px;
+      }
+    }
     @media (max-width: 1532px) {
       flex: 0 0 310px;
       padding: 30px 24px;
@@ -995,7 +1196,35 @@
     @media (max-width: 640px) {
       flex: 0 0 100%;
     }
-
+  .num{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+    .subtitle-num{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      text-transform: uppercase;
+color: #fff;
+      margin-bottom: 40px;
+    }
+    ul{
+      list-style: none;
+      margin: 40px 0;
+      li{
+        background-image: url(../img/svg/check-white.svg);
+        background-repeat: no-repeat;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #fff;
+        padding-left: 40px;
+        background-position: left top;
+      }
+    }
   }
 
   .product-block-content-center-right-status {
@@ -1041,7 +1270,11 @@
   }
 
 }
-
+.modal{
+  padding: 0;
+  max-width: 1500px;
+  margin: 85px 0;
+}
 //news block
 .news-block {
   background-color: #F7F8FB;
@@ -1142,6 +1375,9 @@
     background-color: #F7F8FB;
     border-radius: 50%;
     height: 280px;
+    padding: 10px;
+    cursor: pointer;
+
   }
 
   .certificate-block-card-img {
@@ -1149,6 +1385,10 @@
     object-fit: contain;
     align-items: center;
     margin: auto;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.04);
+    }
   }
 }
 
@@ -1170,6 +1410,10 @@
     @media (max-width: 960px) {
       grid-template-columns: 1fr;
     }
+    @media (max-width: 640px) {
+      padding: 20px 0;
+    }
+
 
   }
 
@@ -1194,6 +1438,10 @@
       border: 0;
       padding-left: 0;
     }
+    @media (max-width: 640px) {
+      width: 60%;
+    }
+
   }
 
   .cooperation-block-grid-left-title {
@@ -1201,6 +1449,10 @@
     font-weight: 600;
     margin-bottom: 30px;
     color: #fff;
+    @media (max-width: 640px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   .cooperation-block-grid-left-desc {
@@ -1208,6 +1460,10 @@
     line-height: 36px;
     font-weight: 400;
     color: #fff;
+    @media (max-width: 640px) {
+      font-size: 16px;
+      line-height: normal;
+    }
   }
 
   .cooperation-block-line {
@@ -1232,11 +1488,14 @@
     background-image: url(../img/svg/phone-circle.svg);
     background-position: left center;
     background-repeat: no-repeat;
-    line-height: 36px;
     margin-right: 60px;
     @media (max-width: 960px) {
       margin-right: 0;
       width: 100%;
+    }
+    @media (max-width: 640px) {
+      font-size: 16px;
+      line-height: normal;
     }
 
     span {
@@ -1631,7 +1890,6 @@
   }
 
   .history-block-card {
-    pointer-events: none;
     width: 100%;
     transition: 0.3s;
     height: 168px;
@@ -1645,6 +1903,10 @@
     background-color: #E7EAF2;
     border-radius: 50%;
     user-select: none;
+    &:hover{
+      background-color: #BA2828;
+      color: #ffffff;
+    }
     @media (max-width: 1532px) {
       height: 249px;
     }
@@ -1675,11 +1937,11 @@
 
   .history-block-tab-content {
     padding: 0 290px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 30px;
     text-align: center;
-    height: 416px;
+    height: 300px;
     overflow: auto;
     @media (max-width: 1532px) {
       padding: 0 200px;
@@ -2340,5 +2602,28 @@
 
   .maps-here {
     margin-top: auto;
+  }
+}
+.modal-form{
+  padding: 20px;
+  .modal-form-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-form-close{
+    margin-left: auto;
+  }
+  .modal-form-image{
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+  }
+  .modal-form-title{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: center;
+color: #295BB8;
+    margin-bottom: 40px;
   }
 }

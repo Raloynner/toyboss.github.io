@@ -1,5 +1,5 @@
+
 AOS.init({
-    easing: 'ease-out-back',
     duration: 1000,
     once: true
 });
@@ -37,8 +37,12 @@ $( function() {
     $( "#tabs-production" ).tabs();
     $( "#tabs-advantages" ).tabs();
     $( ".product-block-content-left" ).tabs();
-    $( "#tab-history" ).tabs();
-    $( "#faq" ).accordion();
+    $( "#tab-history" ).tabs({
+
+    });
+    $( "#faq" ).accordion({
+        heightStyle: "content",
+    });
     $('.counter').counterUp({
         delay: 20,
         time: 1500
@@ -49,4 +53,22 @@ $( function() {
         share: false,
         download: false,
     });
+
+    var scene = document.getElementById('scene-about-us');
+    if(scene) {
+        var parallaxInstance = new Parallax(scene);
+    }
+
+    var rellax = new Rellax('.rellax', {
+        speed: -6,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+    });
+
+
 } );
+
+

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="libs/aos/aos.css">
     <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
@@ -65,13 +65,13 @@
 <section class="about-us-bg-block" style="background-image: url('img/png/about-us-bg.png')">
 
     <div class="container">
-        <h1 class="about-us-bg-block-title">О нас</h1>
+        <h1 class="about-us-bg-block-title rellax" data-rellax-speed="3" >О нас</h1>
     </div>
 </section>
 <section class="history-block">
     <div class="container">
-        <div class="history-block-preview-grid">
-            <div class="history-block-preview-grid-left">
+        <div class="history-block-preview-grid " >
+            <div class="history-block-preview-grid-left rellax"  data-rellax-speed="4">
                 <h2 class="history-block-preview-grid-left-title">История</h2>
                 <p class="history-block-preview-grid-left-desc">
                     Торговая Марка «Тойбосс» была основана в 2012 году и за этот короткий срок смогла зарекомендовать
@@ -79,8 +79,8 @@
                     продукции. Наша компания предлагает
                 </p>
             </div>
-            <div class="history-block-preview-grid-right">
-                <img class="history-block-preview-grid-right-img" src="img/png/history.png" alt="">
+            <div class="history-block-preview-grid-right rellax" id="scene-about-us" data-rellax-speed="2">
+                <img class="history-block-preview-grid-right-img" data-depth="0.3" src="img/png/history.png" alt="">
             </div>
         </div>
         <div class="history-block-tab" id="tab-history">
@@ -581,6 +581,8 @@
 <script src="libs/jquery/jquery-ui.js"></script>
 <script src="libs/lightgallery/lightgallery.js"></script>
 <script src="libs/aos/aos.js"></script>
+<script src="libs/parallax/parallax.min.js"></script>
+<script src="libs/parallax/parallax-2.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
 </body>
