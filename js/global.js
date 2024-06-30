@@ -68,7 +68,7 @@ $( function() {
         horizontal: false
     });
 
-
+    $("#phone").mask("(996) 999-999-999");
 } );
 
 

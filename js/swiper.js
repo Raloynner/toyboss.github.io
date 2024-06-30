@@ -314,4 +314,6 @@ const customSlider = new Swiper('.production-block-carousel .swiper', {
 //   customSlider.update()
 //   customSlider.slideNext(900)
 // })
-
+$('.production-block-carousel .swiper-slide').on('mouseover', function() {
+  customSlider.slideTo($(this).index());
+})

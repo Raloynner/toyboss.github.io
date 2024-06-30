@@ -17,7 +17,7 @@
 <header class="header">
   <div class="container">
     <div class="header-grid">
-      <a href="/" class="header-logo">
+      <a href="./" class="header-logo">
         <img src="img/svg/toyboss-logo-white.svg" alt="">
       </a>
       <nav class="nav">
@@ -126,20 +126,21 @@
 </section>
 <section class="form-block">
   <div class="container">
-    <h4 class="section-title">РАБОТА В ТОЙБОСС</h4>
-    <p class="desc">Хотите расти вместе с нами? Присоединяйтесь к нашей команде, заполните форму ниже</p>
+    <h4 class="section-title">Остались вопросы?</h4>
+    <p class="desc">Задайте интересующий вас вопрос и наши менеджеры ответят вам в ближайшее время</p>
     <form action="" class="form">
+      <label class="label">
+        <input type="text" placeholder="Ваше ФИО:">
+      </label>
       <div class="form-grid">
         <label class="label">
-          <input type="text" placeholder="Ваше имя:">
+          <input  type="email" placeholder="Ваш email">
         </label>
         <label class="label">
-          <input type="text" placeholder="Ваш номер:">
+          <input type="text" placeholder="Ваш номер:" id="phone" value="996 ">
         </label>
       </div>
-      <label class="label">
-        <input type="text" placeholder="Желаемая позиция">
-      </label>
+
       <label class="label">
         <textarea placeholder="Ваше сообщение" rows="3"></textarea>
       </label>
@@ -149,7 +150,6 @@
           <span>политикой конфиденциальности</span>, даю <span>Согласие на обработку персональных данных</span>.</p>
       </label>
       <div class="form-flex">
-        <label class="label-file"><input type="file"> Прикрепить файл </label>
         <button class="button red-button">Отправить</button>
       </div>
 
@@ -265,6 +265,10 @@
 <script src="libs/jquery/jquery-ui.js"></script>
 <script src="libs/lightgallery/lightgallery.js"></script>
 <script src="libs/aos/aos.js"></script>
+<script src="libs/mask/mask.js"></script>
+<script src="libs/parallax/parallax.min.js"></script>
+<script src="libs/parallax/parallax-2.js"></script>
+<script src="libs/modals/modals.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
 </body>

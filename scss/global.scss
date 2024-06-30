@@ -1274,6 +1274,14 @@ color: #fff;
   padding: 0;
   max-width: 1500px;
   margin: 85px 0;
+.product-block-content-center-right{
+  max-height: 600px;
+  overflow: auto;
+}
+  .product-block-content-tabs-content-wrapper{
+    max-height: 256px;
+    overflow: auto;
+  }
 }
 //news block
 .news-block {
