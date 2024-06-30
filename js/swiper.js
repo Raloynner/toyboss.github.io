@@ -66,34 +66,7 @@ const swiper = [
     },
 
   }),
-  new Swiper('.production-block-carousel .swiper', {
-    loop: true,
-    spaceBetween: 4,
-    centeredSlides: true,
-    autoplay: {
-      delay: 3000,
-    },
-    breakpoints: {
-      // mobile + tablet - 320-990
-      320: {
-        slidesPerView: 1
-      },
-      960: {
-        slidesPerView: 2
-      },
-      1532: {
-        slidesPerView: 2
-      },
-    },
-    pagination: {
-      el: '.production-block-carousel .swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.production-block-carousel .swiper-button-next',
-      prevEl: '.production-block-carousel .swiper-button-prev',
-    },
 
-  }),
   new Swiper('.group-of-companies-block .swiper', {
     loop: true,
     spaceBetween: 4,
@@ -201,16 +174,15 @@ const swiper = [
 
   }),
   new Swiper('.history-block .swiper', {
-    on: {
-      activeIndexChange: function (e) {
-        console.log(e.realIndex);
-        $("#tab-history").tabs({
-          active: e.realIndex
-        });
-      },
-    },
+    // on: {
+    //   activeIndexChange: function (e) {
+    //     console.log(e.realIndex);
+    //     $("#tab-history").tabs({
+    //       active: e.realIndex
+    //     });
+    //   },
+    // },
     loop: true,
-    centeredSlides: true,
     allowTouchMove: false,
     scrollbar: {
       draggable: false,
@@ -248,9 +220,10 @@ const swiper = [
   new Swiper('.main-block .swiper', {
     loop: true,
     slidesPerView: 1,
-    autoplay: {
-      delay: 3000,
-    },
+    speed: 2900,
+    // autoplay: {
+    //   delay: 10000,
+    // },
     spaceBetween: 0,
     pagination: {
       el: '.main-block .swiper-pagination',
@@ -309,4 +282,36 @@ const swiper = [
 
 ]
 
+const customSlider = new Swiper('.production-block-carousel .swiper', {
+  loop: true,
+  spaceBetween: 4,
+  centeredSlides: true,
+  speed: 1000,
+  breakpoints: {
+    // mobile + tablet - 320-990
+    320: {
+      slidesPerView: 1
+    },
+    960: {
+      slidesPerView: 2
+    },
+    1532: {
+      slidesPerView: 2
+    },
+  },
+  pagination: {
+    el: '.production-block-carousel .swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.production-block-carousel .swiper-button-next',
+    prevEl: '.production-block-carousel .swiper-button-prev',
+  },
+
+})
+
+// $('.production-block-carousel .swiper .swiper-slide-next').on('mouseover', function() {
+//   console.log(customSlider)
+//   customSlider.update()
+//   customSlider.slideNext(900)
+// })
 

@@ -5,9 +5,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+  <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
   <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="libs/aos/aos.css">
+  <link rel="stylesheet" href="libs/modals/jquery.modal.min.css">
   <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
   <link rel="stylesheet" href="css/global.css">
 
@@ -68,7 +69,7 @@
     <h3 class="section-title">Продукция</h3>
 
   </div>
-  <div >
+  <div>
     <div class="container">
       <ul class="product-block-nav center">
         <li>
@@ -94,14 +95,83 @@
           <h5 class="catalogs-title">Полукопченые колбасы</h5>
           <div class="catalogs-grid">
             <div class="catalogs-grid-item">
+              <a href="#ex1" rel="modal:open" class="link-modal">Open Modal</a>
               <img class="catalogs-grid-item-image" src="img/png/catalog-1.png" alt="">
               <h3 class="catalogs-grid-item-title">Фирменная</h3>
               <p class="catalogs-grid-item-desc">Фирменный продукт, выпускаемый по эксклюзивной рецептуре</p>
+              <div id="ex1" class="modal">
+                <div id="tabs-product">
+
+                  <div class="product-block-content">
+                    <div class="product-block-content-left">
+                      <div class="product-block-sub-nav">
+                        <div class="product-block-sub-nav-item active">
+                          Пепперони
+                        </div>
+                      </div>
+                      <ul class="product-block-content-tabs">
+                        <li class="product-block-content-tabs-item">
+                          <a href="#product-tab-1-1">Описание</a>
+                        </li>
+                        <li class="product-block-content-tabs-item">
+                          <a href="#product-tab-1-2">Состав</a>
+                        </li>
+                        <li class="product-block-content-tabs-item">
+                          <a href="#product-tab-1-3">Специи</a>
+                        </li>
+                      </ul>
+                      <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-1">
+                        <p class="product-block-content-tabs-content-desc">Пепперони отлично подходит для
+                          приготовления
+                          пиццы. Изысканный, терпкий вкус пицце придает
+                          основной ингредиент – колбаса пепперони. Пепперони отлично подходит для приготовления
+                          пиццы.
+                          Изысканный, терпкий вкус пицце придает основной ингредиент – колбаса пепперони.
+                          Пепперони
+                          отлично подходит для приготовления пиццы. Изысканный, терпкий вкус пицце придает
+                          основной
+                          ингредиент – колбаса пепперони.
+                        </p>
+                      </div>
+                      <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-2">
+                        <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                          adipisicing elit. Doloribus, tempora!</p>
+                      </div>
+                      <div class="product-block-content-tabs-content-wrapper" id="product-tab-1-3">
+                        <p class="product-block-content-tabs-content-desc">Lorem ipsum dolor sit amet, consectetur
+                          adipisicing elit. Consequuntur dicta dolore incidunt ipsa neque, quibusdam similique ut.
+                          Ab ipsa, nobis!</p>
+                      </div>
+                      <div class="product-block-content-certificates">
+                        <div class="product-block-content-certificates-item">
+                          <img src="img/svg/certificate-halal-1.svg" alt="">
+                        </div>
+                        <div class="product-block-content-certificates-item">
+                          <img src="img/svg/certificate-halal-2.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-block-content-center">
+                      <img src="img/png/man-product-decor.png" alt="">
+                    </div>
+                    <div class="product-block-content-center-right mode">
+                      <div class="num">13 244</div>
+                      <div class="subtitle-num">любителей Пепперони</div>
+                      <ul>
+                        <li>Какой-нибудь факт, о продажах или</li>
+                        <li>Какой-нибудь факт, о продажах или</li>
+                        <li>Какой-нибудь факт, о продажах или</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image" src="img/png/catalog-1.png" alt="">
               <h3 class="catalogs-grid-item-title">Сырная</h3>
-              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной. Предложите сервировочную нарезку из этого  сервелата своим гостям</p>
+              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной.
+                Предложите сервировочную нарезку из этого сервелата своим гостям</p>
             </div>
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image" src="img/png/catalog-1.png" alt="">
@@ -142,7 +212,8 @@
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image" src="img/png/catalog-2.png" alt="">
               <h3 class="catalogs-grid-item-title">Говяжья</h3>
-              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной. Предложите сервировочную нарезку из этого  сервелата своим гостям</p>
+              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной.
+                Предложите сервировочную нарезку из этого сервелата своим гостям</p>
             </div>
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image" src="img/png/catalog-2.png" alt="">
@@ -176,7 +247,8 @@
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image center" src="img/png/catalog-3.png" alt="">
               <h3 class="catalogs-grid-item-title">Говяжья</h3>
-              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной. Предложите сервировочную нарезку из этого  сервелата своим гостям</p>
+              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной.
+                Предложите сервировочную нарезку из этого сервелата своим гостям</p>
             </div>
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image center" src="img/png/catalog-3.png" alt="">
@@ -210,7 +282,8 @@
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image center" src="img/png/catalog-4.png" alt="">
               <h3 class="catalogs-grid-item-title green">Говяжья</h3>
-              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной. Предложите сервировочную нарезку из этого  сервелата своим гостям</p>
+              <p class="catalogs-grid-item-desc">Включения тёртого сыра делает колбасу особенно сочной и вкусной.
+                Предложите сервировочную нарезку из этого сервелата своим гостям</p>
             </div>
             <div class="catalogs-grid-item">
               <img class="catalogs-grid-item-image center" src="img/png/catalog-4.png" alt="">
@@ -308,6 +381,7 @@
 <script src="libs/jquery/jquery-ui.js"></script>
 <script src="libs/lightgallery/lightgallery.js"></script>
 <script src="libs/aos/aos.js"></script>
+<script src="libs/modals/modals.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
 </body>
