@@ -15,7 +15,11 @@
   <title>Document</title>
 </head>
 <body>
-
+<div id="preloader">
+  <div>
+    <img src="img/svg/preloader.svg" alt="">
+  </div>
+</div>
 <main class="main " >
 
   <header class="header">
@@ -864,23 +868,11 @@
 
   <section class="question-block" data-aos="fade-in">
     <div class="container">
-      <h3 class="section-title">Опрос</h3>
-      <p class="question-block-desc">Ответьте, пожалуйста, на несколько вопросов</p>
       <div class="question-block-content">
-        <h5 class="question-block-content-title">Как вы узнали о нашей компании?</h5>
-        <h6 class="question-block-content-subtitle">Выберите ответ:</h6>
+        <h5 class="question-block-content-title">Примите участие в опросе</h5>
+        <h6 class="question-block-content-subtitle">Уделите 2 минуты и помогите стать нам лучше</h6>
         <div class="question-block-content-grid">
-          <div class="question-block-content-grid-item active">От друзей</div>
-          <div class="question-block-content-grid-item">От родственников</div>
-          <div class="question-block-content-grid-item">В социальных сетях</div>
-          <div class="question-block-content-grid-item">Наружная реклама</div>
-        </div>
-        <div class="question-block-content-counter">
-          <div class="question-block-content-counter-button prev"></div>
-          <div class="question-block-content-counter-count">
-            <span>1</span> - 8
-          </div>
-          <div class="question-block-content-counter-button next"></div>
+          <a href="" class="button red-button">От друзей</a>
         </div>
       </div>
     </div>
@@ -959,6 +951,11 @@
 </div>
 
 <script src="libs/jquery/jquery-v2.2.4.min.js"></script>
+<script>
+  $(window).on("load",function(){
+    $("#preloader").fadeOut(1000);
+  });
+</script>
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>
 <script src="libs/jquery/jquery.counterup.min.js"></script>
