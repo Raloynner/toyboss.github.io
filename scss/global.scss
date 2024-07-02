@@ -1598,7 +1598,6 @@ color: #fff;
 //question-block
 .question-block {
   background-color: #F7F8FB;
-  padding: 95px 0 200px 0;
 
   .section-title {
     margin-bottom: 10px;
@@ -1612,11 +1611,11 @@ color: #fff;
   }
 
   .question-block-content {
-    padding: 60px 50px 120px 50px;
+    padding: 60px 0;
     background-color: transparent;
     border-radius: 10px;
     background-image: url(../img/png/question-big-blue.png);
-    background-position: right bottom;
+    background-position: right center;
     background-repeat: no-repeat;
     min-height: 365px;
     @media (max-width: 640px) {

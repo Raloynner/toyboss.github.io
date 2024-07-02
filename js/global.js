@@ -67,8 +67,10 @@ $( function() {
         vertical: true,
         horizontal: false
     });
-
-    $("#phone").mask("(996) 999-999-999");
+    var scene = document.getElementById('phone');
+    if(scene) {
+        $("#phone").mask("(996) 999-999-999");
+    }
 
 } );
 
