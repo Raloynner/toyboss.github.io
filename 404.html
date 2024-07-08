@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/aos/aos.css">
+  <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
+  <link rel="stylesheet" href="libs/modals/jquery.modal.min.css">
+  <link rel="stylesheet" href="css/global.css">
+
+  <title>Document</title>
+</head>
+<body>
+<div id="preloader">
+  <div>
+    <img src="img/svg/preloader.svg" alt="">
+  </div>
+</div>
+<main class="main ">
+
+  <header class="header">
+    <div class="container">
+      <div class="header-grid">
+        <a href="./" class="header-logo">
+          <img src="img/svg/toyboss-logo-white.svg" alt="">
+        </a>
+        <nav class="nav">
+          <a href="./about-us.html">О НАС</a>
+          <a href="./production.html">Производство</a>
+          <a href="./catalog.html">Продукция</a>
+          <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+          <a href="./news.html">НОВОСТИ</a>
+          <a href="./contacts.html">КОНТАКТЫ</a>
+        </nav>
+        <div class="nav-right">
+          <div class="nav-right-set-lang">
+            <div onclick="openDropdown('landDropdown')" class="dropbtn">ru</div>
+            <div id="landDropdown" class="dropdown-content">
+              <a href=""><img src="img/svg/kg.svg" alt="">KG</a>
+              <a href="" class="active"><img src="img/svg/en.svg" alt="">EN</a>
+              <a href=""><img src="img/svg/ru.svg" alt="">RU</a>
+            </div>
+          </div>
+          <div class="mobile-burger" onclick="showMobileMenu()">
+            <img src="img/svg/menu.svg" alt="">
+          </div>
+          <a href="" class="red-button button">Игра «Ustukan»</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-head">
+      <a href="./"><img src="img/svg/toyboss-logo-blue.svg" alt=""></a>
+      <div onclick="hiddenMobileMenu()">
+        <img src="img/svg/close.svg" alt="">
+      </div>
+    </div>
+    <nav class="mobile-menu-head-nav">
+      <a href="./about-us.html">О НАС</a>
+      <a href="./production.html">Производство</a>
+      <a href="./catalog.html">Продукция</a>
+      <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+      <a href="./news.html">НОВОСТИ</a>
+      <a href="./contacts.html">КОНТАКТЫ</a>
+    </nav>
+    <a href="" class="red-button button">Игра «Ustukan»</a>
+  </div>
+
+
+  <div class="error-page">
+    <div class="container">
+      <img src="img/png/404.png" alt="">
+      <h2>Страница не найдена</h2>
+      <p>Страница на которую вы пытаетесь попасть, не существует или была удалена</p>
+      <a href="" class="red-button button">На главную</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-grid-left">
+          <a href="" class="footer-grid-left-logo"><img src="img/svg/toyboss-logo-white.svg" alt=""></a>
+          <p class="footer-slogan">Компания «Тойбосс» -производитель
+            колбасных изделий</p>
+          <div class="footer-social">
+            <a href="">
+              <img src="img/svg/facebook.svg" alt="">
+            </a>
+            <a href="">
+              <img src="img/svg/tiktok.svg" alt="">
+            </a>
+            <a href="">
+              <img src="img/svg/facebook-2.svg" alt="">
+            </a>
+            <a href="">
+              <img src="img/svg/youtube.svg" alt="">
+            </a>
+          </div>
+          <div class="footer-whatsapp">
+            <div class="footer-whatsapp-label">WhatsApp:</div>
+            <a class="footer-whatsapp-link" href="tel: +996 312 45 37 66"><img src="img/svg/whatsapp.svg"
+                                                                               alt="">+996 312 45 37 66</a>
+          </div>
+        </div>
+        <div class="footer-grid-right">
+          <div>
+            <div class="footer-right-title">контакты</div>
+            <div class="footer-right-info">
+              <div class="footer-right-info-label">Офис в г. Бишкек</div>
+              <div class="footer-right-info-title">Ул. Чокана Валиханова 2/3Б</div>
+            </div>
+            <div class="footer-right-info">
+              <div class="footer-right-info-label">Телефон:</div>
+              <div class="footer-right-info-title">+996 312 45 37 66</div>
+            </div>
+            <div class="footer-right-info">
+              <div class="footer-right-info-label">E-mail:</div>
+              <div class="footer-right-info-title">info@toyboss.kg</div>
+            </div>
+          </div>
+          <div>
+            <div class="footer-right-title">Меню</div>
+            <nav class="footer-right-nav">
+              <a href="">О НАС</a>
+              <a href="./production.html">Производство</a>
+              <a href="./catalog.html">Продукция</a>
+              <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
+              <a href="">НОВОСТИ</a>
+              <a href="">вопросы и ответы</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-copyright">
+    Все права защищены. ОсОО Адал Азык 2024
+  </div>
+</main>
+
+<div id="modalSuccess" class="modal-form modal">
+  <div class="modal-form-flex">
+    <a href="#" rel="modal:close" class="modal-form-close">
+      <img src="img/svg/close-modal.svg" alt="">
+    </a>
+    <img src="img/svg/check.svg" class="modal-form-image" alt="">
+    <h4 class="modal-form-title">Спасибо, ваша заявка успешно отправлена</h4>
+  </div>
+</div>
+
+<script src="libs/jquery/jquery-v2.2.4.min.js"></script>
+<script>
+  $(window).on("load", function () {
+    $("#preloader").fadeOut(1000);
+  });
+</script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/jquery/jquery.counterup.min.js"></script>
+<script src="libs/jquery/jquery-ui.js"></script>
+<script src="libs/lightgallery/lightgallery.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/parallax/parallax.min.js"></script>
+<script src="libs/parallax/parallax-2.js"></script>
+<script src="libs/modals/modals.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/global.js"></script>
+<script>
+  // $('#modalSuccess').modal({
+  //   showClose: false
+  // });
+  // данная функция вызовет модальное окно success
+</script>
+</body>
+</html>

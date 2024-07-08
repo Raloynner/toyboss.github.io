@@ -173,54 +173,13 @@ const swiper = [
     },
 
   }),
-  new Swiper('.history-block .swiper', {
-    // on: {
-    //   activeIndexChange: function (e) {
-    //     console.log(e.realIndex);
-    //     $("#tab-history").tabs({
-    //       active: e.realIndex
-    //     });
-    //   },
-    // },
-    loop: true,
-    allowTouchMove: false,
-    scrollbar: {
-      draggable: false,
-    },
-    breakpoints: {
-      // mobile + tablet - 320-990
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 90,
-      },
-      960: {
-        slidesPerView: 3,
-        spaceBetween: 90,
-      },
 
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 120,
-      },
-      1532: {
-        slidesPerView: 5,
-        spaceBetween: 120,
-      },
-
-    },
-    navigation: {
-      nextEl: '.history-block .swiper-button-next',
-      prevEl: '.history-block .swiper-button-prev',
-    },
-
-  }),
 
 
   new Swiper('.main-block .swiper', {
     loop: true,
     slidesPerView: 1,
-    speed: 2900,
+    speed: 3200,
     // autoplay: {
     //   delay: 10000,
     // },
@@ -316,4 +275,52 @@ const customSlider = new Swiper('.production-block-carousel .swiper', {
 // })
 $('.production-block-carousel .swiper-slide').on('mouseover', function() {
   customSlider.slideTo($(this).index());
+})
+
+const historySwiper = new Swiper('.history-block .swiper', {
+  // on: {
+  //   activeIndexChange: function (e) {
+  //     console.log(e.realIndex);
+  //     $("#tab-history").tabs({
+  //       active: e.realIndex
+  //     });
+  //   },
+  // },
+  loop: false,
+
+  speed: 2000,
+  allowTouchMove: false,
+  scrollbar: {
+    draggable: false,
+  },
+  breakpoints: {
+    // mobile + tablet - 320-990
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 90,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 90,
+    },
+
+
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 120,
+    },
+    1532: {
+      slidesPerView: 5,
+      spaceBetween: 120,
+    },
+
+  },
+  navigation: {
+    nextEl: '.history-block .swiper-button-next',
+    prevEl: '.history-block .swiper-button-prev',
+  },
+
+})
+$('.history-block .swiper-slide').on('mouseover', function() {
+  historySwiper.slideTo($(this).index());
 })

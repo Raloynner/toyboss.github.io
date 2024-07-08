@@ -440,7 +440,12 @@
       overflow: hidden;
       cursor: pointer;
       position: relative;
-
+      &:hover{
+        background-color: #295BB8;
+        .advantages-block-card-count{
+          color: #fff;
+        }
+      }
       &:after {
         content: '';
         width: 200px;
@@ -536,8 +541,11 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    transition: 0.3s;
   }
-
+.advantages-block-card-image{
+  transition: 0.3s;
+}
   .advantages-block-card-footer {
     display: flex;
     flex-grow: 3;
@@ -1734,11 +1742,12 @@ color: #fff;
   }
 
   .mission-block-slogan {
-    background-image: url(../img/svg/slogan.svg);
+    background-image: url(../img/svg/slogan.svg), url(../img/svg/slogan.svg);;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left center, right center;
+    display: inline-flex;
     color: #fff;
-    padding-left: 40px;
+    padding: 0 40px;
     font-size: 26px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -1764,9 +1773,9 @@ color: #fff;
 .about-us-bg-block {
   min-height: 470px;
   padding: 350px 0 60px 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   @media (max-width: 1532px) {
     padding: 260px 0 60px 0;
     min-height: 360px;
@@ -1809,6 +1818,16 @@ color: #fff;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+  &.pagination-item-button{
+    &:hover {
+      color: #fff;
+      border-color: #BA2828;
+      background-color: #BA2828;
+      img {
+        color: #fff;
+      }
+    }
+  }
 
     &:hover {
       color: #BA2828;
@@ -2387,7 +2406,22 @@ color: #fff;
     display: block;
     width: 100%;
     margin-bottom: 20px;
-
+&.label-error{
+  input, textarea{
+    border: 1px solid #BA2828;
+    background-color: #FCF7F7;
+    color: #BA2828;
+  }
+  span {
+    margin-top: 6px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #BA2828;
+  }
+}
     input, textarea {
       border: 1px solid #D3D9E6;
       background-color: #F7F8FB;
@@ -2397,6 +2431,7 @@ color: #fff;
       width: 100%;
       display: block;
       border-radius: 10px;
+      outline: none!important;
     }
 
     input {
@@ -2671,5 +2706,29 @@ color: #295BB8;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
 
+  }
+}
+.error-page{
+  text-align: center;
+  min-height: 50vh;
+  padding: 100px 0;
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  h2{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.39px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #808080;
+    max-width: 450px;
+    margin: 0 auto 50px auto;
   }
 }
