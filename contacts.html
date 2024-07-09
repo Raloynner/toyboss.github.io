@@ -130,15 +130,14 @@
     <p class="desc">Задайте интересующий вас вопрос и наши менеджеры ответят вам в ближайшее время</p>
     <form action="" class="form">
       <label class="label">
-        <input type="text" placeholder="Ваше ФИО:">
+        <input type="text" placeholder="Ваше ФИО:" required>
       </label>
       <div class="form-grid">
-        <label class="label label-error">
-          <input  type="email" placeholder="Ваш email">
-          <span>Ошибка, попробуйте еще раз</span>
+        <label class="label">
+          <input  type="email" placeholder="Ваш email" required>
         </label>
         <label class="label">
-          <input type="text" placeholder="Ваш номер:" id="phone" value="996 ">
+          <input type="text" placeholder="Ваш номер:" id="phone" value="996 " required>
         </label>
       </div>
 
@@ -146,7 +145,7 @@
         <textarea placeholder="Ваше сообщение" rows="3"></textarea>
       </label>
       <label class="label-checkbox">
-        <input type="checkbox">
+        <input type="checkbox" required>
         <p>Я принимаю условия <span>Пользовательского соглашения</span>, ознакомлен с
           <span>политикой конфиденциальности</span>, даю <span>Согласие на обработку персональных данных</span>.</p>
       </label>

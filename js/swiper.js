@@ -290,6 +290,7 @@ const historySwiper = new Swiper('.history-block .swiper', {
 
   speed: 2000,
   allowTouchMove: false,
+  centeredSlides: true,
   scrollbar: {
     draggable: false,
   },

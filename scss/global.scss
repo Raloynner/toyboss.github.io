@@ -527,7 +527,11 @@
         filter: brightness(0) invert(1);
       }
     }
-
+    &.hover-blue{
+      &:hover{
+        background-color: #295BB8;
+      }
+    }
     .advantages-block-card-decor {
       opacity: 0.5;
       transform: rotate(-90deg);
