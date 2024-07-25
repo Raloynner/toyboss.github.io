@@ -183,14 +183,14 @@
         <p class="desc">Кыргызская Республика, Чуйская обл., Ысык-Атинский р-н,
           с. Новопокровка, Логвиненковский а/о, контур 159</p>
         <div class="maps-here">
-          <img src="img/png/map1.png" alt="">
+          <div class="map js-map" data-lat="42.863494" data-long="74.776761" data-zoom="15"></div>
         </div>
       </div>
       <div class="item">
         <h4 class="title">Корпоративный офис:</h4>
         <p class="desc">Кыргызская Республика, г. Бишкек, ​ул. Чокана Валиханова, 2/3Б</p>
         <div class="maps-here">
-          <img src="img/png/map2.png" alt="">
+          <div class="map js-map" data-lat="42.863547" data-long="74.678594" data-zoom="15"></div>
         </div>
       </div>
 
@@ -271,5 +271,10 @@
 <script src="libs/modals/modals.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
+<script>
+  var mapURL = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=988ae9ce-dfd2-4b44-8ff0-a24667157001';
+  var mapBalloonPath = 'img/svg/map.svg';
+</script>
+<script src="js/map.js"></script>
 </body>
 </html>

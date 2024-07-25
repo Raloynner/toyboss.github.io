@@ -167,7 +167,7 @@
 <section class="products-info">
   <div class="container">
     <div class="line"></div>
-    <div class="products-info-row">
+    <div class="products-info-row" id="swiper-1">
       <div class="products-info-grid">
         <div class="products-info-grid-left">
           <img src="img/svg/sertificate.svg" alt="">
@@ -222,7 +222,7 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
-    <div class="products-info-row">
+    <div class="products-info-row" id="swiper-2">
       <div class="products-info-grid">
         <div class="products-info-grid-left">
           <img src="img/svg/lab.svg" alt="">
@@ -704,8 +704,73 @@
 <script src="libs/jquery/jquery.counterup.min.js"></script>
 <script src="libs/jquery/jquery-ui.js"></script>
 <script src="libs/lightgallery/lightgallery.js"></script>
+<script src="libs/parallax/parallax.min.js"></script>
+<script src="libs/parallax/parallax-2.js"></script>
+<script src="libs/modals/modals.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
+<script>
+  // надо зафорычить и подставлять index в #swiper-сюда
+  const productInfoSwiper = new Swiper('#swiper-1 .swiper', {
+    slidesPerView: 2,
+    initialSlide: 0,
+    centeredSlides: true,
+    speed: 1200,
+    spaceBetween: 30,
+    breakpoints: {
+      // mobile + tablet - 320-990
+      0: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+
+    },
+    pagination: {
+      el: '.products-info-row .swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.products-info-row .swiper-button-next',
+      prevEl: '.products-info-row .swiper-button-prev',
+    },
+
+  })
+
+  $('#swiper-1 .swiper-slide').on('mouseover', function() {
+    productInfoSwiper?.slideTo($(this).index());
+  })
+  const productInfoSwiper2 = new Swiper('#swiper-2 .swiper', {
+    slidesPerView: 2,
+    initialSlide: 0,
+    centeredSlides: true,
+    speed: 1200,
+    spaceBetween: 30,
+    breakpoints: {
+      // mobile + tablet - 320-990
+      0: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+
+    },
+    pagination: {
+      el: '.products-info-row .swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.products-info-row .swiper-button-next',
+      prevEl: '.products-info-row .swiper-button-prev',
+    },
+
+  })
+
+  $('#swiper-2 .swiper-slide').on('mouseover', function() {
+    productInfoSwiper2?.slideTo($(this).index());
+  })
+
+</script>
 </body>
 </html>

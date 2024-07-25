@@ -48,7 +48,7 @@
           <div class="mobile-burger" onclick="showMobileMenu()">
             <img src="img/svg/menu.svg" alt="">
           </div>
-          <a href="" class="red-button button">Игра «Ustukan»</a>
+          <a class="red-button button" id="showError">Игра «Ustukan»</a>
         </div>
       </div>
     </div>
@@ -926,6 +926,7 @@
               <a href="./cooperation.html">СОТРУДНИЧЕСТВО</a>
               <a href="">НОВОСТИ</a>
               <a href="">вопросы и ответы</a>
+              <a href=""> часто задаваемые вопросы</a>
             </nav>
           </div>
         </div>
@@ -946,6 +947,16 @@
     <h4 class="modal-form-title">Спасибо, ваша заявка успешно отправлена</h4>
   </div>
 </div>
+<div id="modalError" class="modal-form modal" style="max-width: 500px;">
+  <div class="modal-form-flex">
+    <a href="#" rel="modal:close" class="modal-form-close">
+      <img src="img/svg/close-modal.svg" alt="">
+    </a>
+    <img src="img/svg/check.svg" class="modal-form-image" alt="">
+    <h4 class="modal-form-title">Игра еще в разработке</h4>
+  </div>
+</div>
+
 
 <script src="libs/jquery/jquery-v2.2.4.min.js"></script>
 <script>
@@ -968,6 +979,13 @@
   // $('#modalSuccess').modal({
   //   showClose: false
   // });
+
+  $("#showError").click(function(){
+    $('#modalError').modal({
+      showClose: false
+    })
+  });
+
   // данная функция вызовет модальное окно success
 </script>
 </body>

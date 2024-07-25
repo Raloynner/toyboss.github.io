@@ -176,23 +176,7 @@ const swiper = [
 
 
 
-  new Swiper('.main-block .swiper', {
-    loop: true,
-    slidesPerView: 1,
-    speed: 3200,
-    // autoplay: {
-    //   delay: 10000,
-    // },
-    spaceBetween: 0,
-    pagination: {
-      el: '.main-block .swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.main-block .swiper-button-next',
-      prevEl: '.main-block .swiper-button-prev',
-    },
 
-  }),
   new Swiper('.news-detail .swiper', {
     loop: true,
     slidesPerView: 1,
@@ -210,39 +194,13 @@ const swiper = [
     },
 
   }),
-  new Swiper('.products-info-row .swiper', {
-    loop: true,
-    slidesPerView: 2,
-    autoplay: {
-      delay: 3000,
-    },
-    speed: 1200,
-    spaceBetween: 30,
-    breakpoints: {
-      // mobile + tablet - 320-990
-      0: {
-        slidesPerView: 1,
-      },
-      1200: {
-        slidesPerView: 2,
-      },
 
-    },
-    pagination: {
-      el: '.products-info-row .swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.products-info-row .swiper-button-next',
-      prevEl: '.products-info-row .swiper-button-prev',
-    },
-
-  }),
 
 
 ]
 
 const customSlider = new Swiper('.production-block-carousel .swiper', {
-  loop: true,
+  loop: false,
   spaceBetween: 4,
   centeredSlides: true,
   speed: 1000,
@@ -287,7 +245,7 @@ const historySwiper = new Swiper('.history-block .swiper', {
   //   },
   // },
   loop: false,
-
+  initialSlide: 2,
   speed: 2000,
   allowTouchMove: false,
   centeredSlides: true,
@@ -324,4 +282,26 @@ const historySwiper = new Swiper('.history-block .swiper', {
 })
 $('.history-block .swiper-slide').on('mouseover', function() {
   historySwiper.slideTo($(this).index());
+})
+
+const mainSlider = new Swiper('.main-block .swiper', {
+  loop: true,
+  slidesPerView: 1,
+  speed: 3200,
+  // autoplay: {
+  //   delay: 10000,
+  // },
+  spaceBetween: 0,
+  pagination: {
+    el: '.main-block .swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.main-block .swiper-button-next',
+    prevEl: '.main-block .swiper-button-prev',
+  },
+
+})
+
+$('.main-block .swiper').on('mouseover', function() {
+  mainSlider.slideNext()
 })
