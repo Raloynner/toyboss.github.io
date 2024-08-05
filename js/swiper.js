@@ -285,7 +285,7 @@ $('.history-block .swiper-slide').on('mouseover', function() {
 })
 
 const mainSlider = new Swiper('.main-block .swiper', {
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   speed: 3200,
   // autoplay: {
@@ -302,6 +302,23 @@ const mainSlider = new Swiper('.main-block .swiper', {
 
 })
 
-$('.main-block .swiper').on('mouseover', function() {
-  mainSlider.slideNext()
+const swiperHoverItemLeft = document.querySelector('.swiper-left')
+const swiperHoverItemRight = document.querySelector('.swiper-right')
+$('.main-block .swiper .swiper-left').on('mouseenter', function() {
+  mainSlider.slideTo(mainSlider.activeIndex - 1);
+  swiperHoverItemLeft.style.display = "none";
+  swiperHoverItemRight.style.display = "none";
+  setTimeout(()=> {
+    swiperHoverItemLeft.style.display = "block";
+    swiperHoverItemRight.style.display = "block";
+  },3250)
+})
+$('.main-block .swiper .swiper-right').on('mouseenter', function() {
+  mainSlider.slideTo(mainSlider.activeIndex + 1);
+  swiperHoverItemLeft.style.display = "none";
+  swiperHoverItemRight.style.display = "none";
+  setTimeout(()=> {
+    swiperHoverItemLeft.style.display = "block";
+    swiperHoverItemRight.style.display = "block";
+  },3250)
 })
